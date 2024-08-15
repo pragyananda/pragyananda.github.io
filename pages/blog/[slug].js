@@ -11,6 +11,7 @@ import BlogEditor from "../../components/BlogEditor";
 import { useRouter } from "next/router";
 import Cursor from "../../components/Cursor";
 import data from "../../data/portfolio.json";
+import Image from "next/image";
 
 const BlogPost = ({ post }) => {
   const [showEditor, setShowEditor] = useState(false);
