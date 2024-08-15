@@ -31,9 +31,8 @@ const BlogPost = ({ post }) => {
       {data.showCursor && <Cursor />}
 
       <div
-        className={`container mx-auto mt-10 ${
-          data.showCursor && "cursor-none"
-        }`}
+        className={`container mx-auto mt-10 ${data.showCursor && "cursor-none"
+          }`}
       >
         <Header isBlog={true} />
         <div className="mt-10 flex flex-col">
@@ -41,6 +40,8 @@ const BlogPost = ({ post }) => {
             className="w-full h-96 rounded-lg shadow-lg object-cover"
             src={post.image}
             alt={post.title}
+            width={24}
+            height={24}
           />
           <h1
             ref={textOne}
