@@ -4,44 +4,14 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { ExternalLink, Github, Brain, ShoppingCart, MessageSquare } from "lucide-react"
+import { ExternalLink, Github, ShoppingCart } from "lucide-react"
 
-export function ProjectsSection(project: any) {
-  const projects = [
-    {
-      title: "AI-Powered E-commerce Platform",
-      description:
-        "A full-stack e-commerce solution with AI-driven product recommendations, intelligent search, and automated customer support chatbot.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["Next.js", "Python", "TensorFlow", "PostgreSQL", "Stripe"],
-      icon: ShoppingCart,
-      github: "#",
-      live: "#",
-      featured: true,
-    },
-    {
-      title: "Smart Content Management System",
-      description:
-        "A headless CMS with AI content generation, automated SEO optimization, and real-time collaboration features.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["React", "Node.js", "OpenAI API", "MongoDB", "Sanity"],
-      icon: MessageSquare,
-      github: "#",
-      live: "#",
-      featured: true,
-    },
-    {
-      title: "Machine Learning Model Deployment Platform",
-      description:
-        "A platform for deploying and managing ML models with auto-scaling, monitoring, and A/B testing capabilities.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["Python", "FastAPI", "Docker", "AWS", "MLflow"],
-      icon: Brain,
-      github: "#",
-      live: "#",
-      featured: false,
-    },
-  ]
+export function ProjectsSection({ projects }: { projects: any[] }) {
+  const transformedProjects = projects.map((project) => ({
+    ...project,
+    icon: ShoppingCart,
+    featured: true,
+  }))
 
   return (
     <section id="projects" className="py-20 bg-muted/30">
@@ -60,11 +30,11 @@ export function ProjectsSection(project: any) {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
-          {projects
+          {transformedProjects
             .filter((p) => p.featured)
             .map((project, index) => (
               <motion.div
-                key={index}
+                key={project._id || index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
@@ -89,7 +59,7 @@ export function ProjectsSection(project: any) {
                   </CardHeader>
                   <CardContent>
                     <div className="flex flex-wrap gap-2">
-                      {project.technologies.map((tech, techIndex) => (
+                      {project.technologies?.map((tech: string, techIndex: number) => (
                         <Badge key={techIndex} variant="outline">
                           {tech}
                         </Badge>
@@ -97,62 +67,18 @@ export function ProjectsSection(project: any) {
                     </div>
                   </CardContent>
                   <CardFooter className="flex gap-2">
-                    <Button variant="outline" size="sm" className="bg-background text-foreground">
-                      <Github className="mr-2 h-4 w-4" />
-                      Code
-                    </Button>
-                    <Button size="sm">
-                      <ExternalLink className="mr-2 h-4 w-4" />
-                      Live Demo
-                    </Button>
-                  </CardFooter>
-                </Card>
-              </motion.div>
-            ))}
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects
-            .filter((p) => !p.featured)
-            .map((project, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <Card className="h-full hover:shadow-md transition-shadow">
-                  <CardHeader>
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
-                        <project.icon className="h-4 w-4 text-primary" />
-                      </div>
-                      <CardTitle className="text-lg">{project.title}</CardTitle>
-                    </div>
-                    <CardDescription>{project.description}</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex flex-wrap gap-1">
-                      {project.technologies.slice(0, 3).map((tech, techIndex) => (
-                        <Badge key={techIndex} variant="secondary" className="text-xs">
-                          {tech}
-                        </Badge>
-                      ))}
-                      {project.technologies.length > 3 && (
-                        <Badge variant="secondary" className="text-xs">
-                          +{project.technologies.length - 3}
-                        </Badge>
-                      )}
-                    </div>
-                  </CardContent>
-                  <CardFooter className="flex gap-2">
-                    <Button variant="ghost" size="sm">
-                      <Github className="h-4 w-4" />
-                    </Button>
-                    <Button variant="ghost" size="sm">
-                      <ExternalLink className="h-4 w-4" />
-                    </Button>
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <Button variant="outline" size="sm" className="bg-background text-foreground">
+                        <Github className="mr-2 h-4 w-4" />
+                        Code
+                      </Button>
+                    </a>
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <Button size="sm">
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        Live Demo
+                      </Button>
+                    </a>
                   </CardFooter>
                 </Card>
               </motion.div>

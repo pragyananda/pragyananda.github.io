@@ -75,13 +75,17 @@ export function HeroSection() {
             transition={{ delay: 1 }}
             className="flex flex-wrap gap-4 justify-center mb-12"
           >
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
-              <Mail className="mr-2 h-4 w-4" />
-              Get In Touch
+            <Button size="lg" className="bg-primary hover:bg-primary/90" asChild>
+              <a href="mailto:pragyanandasaho@gmail.com">
+                <Mail className="mr-2 h-4 w-4" />
+                Get In Touch
+              </a>
             </Button>
-            <Button variant="outline" size="lg" className="bg-background text-foreground border-border hover:bg-muted">
-              <Download className="mr-2 h-4 w-4" />
-              Download CV
+            <Button variant="outline" size="lg" className="bg-background text-foreground border-border hover:bg-muted" asChild>
+              <a href="/pragyanand_sahoo_cv.pdf" download>
+                <Download className="mr-2 h-4 w-4" />
+                Download CV
+              </a>
             </Button>
           </motion.div>
 
@@ -91,14 +95,20 @@ export function HeroSection() {
             transition={{ delay: 1.2 }}
             className="flex gap-6 justify-center mb-12"
           >
-            <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10">
-              <Github className="h-5 w-5" />
+            <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10" asChild>
+              <a href="https://github.com/pragyananda" target="_blank" rel="noopener noreferrer">
+                <Github className="h-5 w-5" />
+              </a>
             </Button>
-            <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10">
-              <Linkedin className="h-5 w-5" />
+            <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10" asChild>
+              <a href="https://www.linkedin.com/in/pragyanandsaho/" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="h-5 w-5" />
+              </a>
             </Button>
-            <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10">
-              <Mail className="h-5 w-5" />
+            <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10" asChild>
+              <a href="mailto:pragyanandasaho@gmail.com">
+                <Mail className="h-5 w-5" />
+              </a>
             </Button>
           </motion.div>
 

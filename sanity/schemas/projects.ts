@@ -37,5 +37,10 @@ export default {
             title: 'GitHub Link',
             type: 'url',
         },
+        {
+            name: 'featured',
+            title: 'Featured',
+            type: 'boolean',
+        },
     ],
 }
