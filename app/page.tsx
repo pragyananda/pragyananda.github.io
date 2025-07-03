@@ -9,9 +9,12 @@ import { TestimonialsSection } from '@/components/testimonials-section'
 import { BlogSection } from '@/components/blog-section'
 import { ContactSection } from '@/components/contact-section'
 import { client, urlFor } from '@/lib/sanityClient'
+import { PublicationsSection } from '@/components/publications-section'
+import { EducationSection } from '@/components/education-section'
+import { CertificationsSection } from '@/components/certification-section'
 
-// Force static rendering for GitHub Pages
-export const dynamic = 'force-static'
+// Force static rendering for GitHub Pagesloca
+// export const dynamic = 'force-static'
 
 type About = {
   bio: string
@@ -200,9 +203,12 @@ export default async function Home() {
       <SkillsSection skillCategories={skillCategories} />
       <ServicesSection services={services} />
       <ProjectsSection projects={projects} />
+      {/* <PublicationsSection />
+      <EducationSection />
+      <CertificationsSection /> */}
       <ExperienceSection experiences={experiences} />
-      <TestimonialsSection testimonials={testimonials} />
-      <BlogSection blogs={blogs} />
+      {/* <TestimonialsSection testimonials={testimonials} /> */}
+      {/* <BlogSection blogs={blogs} /> */}
       <ContactSection />
     </main>
   )

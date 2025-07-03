@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Moon, Sun, Menu, Download, Home, User, Code, Briefcase, Mail } from "lucide-react"
+import { Moon, Sun, Menu, Download, Home, User, Code, Briefcase, Mail, BookOpen } from "lucide-react"
 import { useTheme } from "next-themes"
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -40,6 +40,7 @@ export function Navigation() {
     { id: "about", label: "About", icon: User, href: "#about" },
     { id: "skills", label: "Skills", icon: Code, href: "#skills" },
     { id: "projects", label: "Projects", icon: Briefcase, href: "#projects" },
+    { id: "publications", label: "Publications", icon: BookOpen, href: "#publications" },
     { id: "experience", label: "Experience", icon: Briefcase, href: "#experience" },
     { id: "contact", label: "Contact", icon: Mail, href: "#contact" },
   ]

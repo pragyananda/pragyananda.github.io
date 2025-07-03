@@ -183,7 +183,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react'
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, CodeXml } from 'lucide-react'
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 
@@ -252,9 +252,9 @@ export function ContactSection() {
       label: 'LinkedIn',
     },
     {
-      icon: Twitter,
-      href: 'https://twitter.com/your-username', // Replace with your Twitter handle
-      label: 'Twitter',
+      icon: CodeXml,
+      href: 'https://dev.to/pragyanandasaho',
+      label: 'Dev',
     },
   ]
 
