@@ -13,107 +13,97 @@ import { PublicationsSection } from '@/components/publications-section'
 import { EducationSection } from '@/components/education-section'
 import { CertificationsSection } from '@/components/certification-section'
 
-// Force static rendering for GitHub Pagesloca
-// export const dynamic = 'force-static'
-
+// Define types (same as your original code)
 type About = {
-  bio: string
-  highlights: { title: string; description: string; icon: string }[]
-  journey: any[] // Portable text
-}
+  bio: string;
+  highlights: { title: string; description: string; icon: string }[];
+  journey: any[]; // Portable text
+};
 
 type Stat = {
-  key: string
-  label: string
-  value: number
-  suffix: string
-}
+  key: string;
+  label: string;
+  value: number;
+  suffix: string;
+};
 
 type SkillCategory = {
-  title: string
-  skills: string[]
-}
+  title: string;
+  skills: string[];
+};
 
 type Service = {
-  title: string
-  description: string
-  features: string[]
-  price: string
-  icon: string
-}
+  title: string;
+  description: string;
+  features: string[];
+  price: string;
+  icon: string;
+};
 
 type Project = {
-  _id: string
-  title: string
-  description: string
-  image: string
-  technologies: string[]
-  link: string
-  github?: string
-  featured: boolean
-}
+  _id: string;
+  title: string;
+  description: string;
+  image: string;
+  technologies: string[];
+  link: string;
+  github?: string;
+  featured: boolean;
+};
 
 type Experience = {
-  title: string
-  company: string
-  location: string
-  period: string
-  description: string
-  achievements: string[]
-  technologies: string[]
-}
+  title: string;
+  company: string;
+  location: string;
+  period: string;
+  description: string;
+  achievements: string[];
+  technologies: string[];
+};
 
 type Testimonial = {
-  name: string
-  role: string
-  avatar: string
-  content: string
-  rating: number
-}
+  name: string;
+  role: string;
+  avatar: string;
+  content: string;
+  rating: number;
+};
 
 type Blog = {
-  title: string
-  excerpt: string
-  image: string
-  category: string
-  readTime: string
-  date: string
-  views: string
-  featured: boolean
-  content: any[] // Portable text
-}
+  title: string;
+  excerpt: string;
+  image: string;
+  category: string;
+  readTime: string;
+  date: string;
+  views: string;
+  featured: boolean;
+  content: any[]; // Portable text
+};
 
-export default async function Home() {
-  let about: About = { bio: '', highlights: [], journey: [] }
-  let stats: Stat[] = []
-  let skillCategories: SkillCategory[] = []
-  let services: Service[] = []
-  let projects: Project[] = []
-  let experiences: Experience[] = []
-  let testimonials: Testimonial[] = []
-  let blogs: Blog[] = []
-
+// Data fetching function
+async function fetchData() {
   try {
-    about = await client.fetch(`
+    const about: About = await client.fetch(`
       *[_type == "about"][0] {
         bio,
         highlights,
         journey
       }
-    `) || about
+    `) || { bio: '', highlights: [], journey: [] };
 
-    stats = await client.fetch(`
+    const stats: Stat[] = await client.fetch(`
       *[_type == "stats"][0].stats
-    `) || stats
+    `) || [];
 
-    skillCategories = await client.fetch(`
+    const skillCategories: SkillCategory[] = await client.fetch(`
       *[_type == "skillCategory"] | order(title asc) {
         title,
         skills
       }
-    `) || skillCategories
+    `) || [];
 
-    services = await client.fetch(`
+    const services: Service[] = await client.fetch(`
       *[_type == "service"] | order(title asc) {
         title,
         description,
@@ -121,9 +111,9 @@ export default async function Home() {
         price,
         icon
       }
-    `) || services
+    `) || [];
 
-    projects = await client.fetch(`
+    let projects: Project[] = await client.fetch(`
       *[_type == "projects"] | order(_createdAt desc) {
         _id,
         title,
@@ -134,14 +124,13 @@ export default async function Home() {
         github,
         featured
       }
-    `) || projects
-
+    `) || [];
     projects = projects.map((project: any) => ({
       ...project,
       image: project.image ? urlFor(project.image).url() : '',
-    }))
+    }));
 
-    experiences = await client.fetch(`
+    const experiences: Experience[] = await client.fetch(`
       *[_type == "experience"] | order(_createdAt desc) {
         title,
         company,
@@ -151,9 +140,9 @@ export default async function Home() {
         achievements,
         technologies
       }
-    `) || experiences
+    `) || [];
 
-    testimonials = await client.fetch(`
+    let testimonials: Testimonial[] = await client.fetch(`
       *[_type == "testimonial"] | order(_createdAt desc) {
         name,
         role,
@@ -161,14 +150,13 @@ export default async function Home() {
         content,
         rating
       }
-    `) || testimonials
-
+    `) || [];
     testimonials = testimonials.map((testimonial: any) => ({
       ...testimonial,
       avatar: testimonial.avatar ? urlFor(testimonial.avatar).url() : '',
-    }))
+    }));
 
-    blogs = await client.fetch(`
+    let blogs: Blog[] = await client.fetch(`
       *[_type == "blog"] | order(date desc) {
         title,
         excerpt,
@@ -180,8 +168,7 @@ export default async function Home() {
         featured,
         content
       }
-    `) || blogs
-
+    `) || [];
     blogs = blogs.map((blog: any) => ({
       ...blog,
       image: blog.image ? urlFor(blog.image).url() : '',
@@ -190,10 +177,29 @@ export default async function Home() {
         day: 'numeric',
         year: 'numeric',
       }),
-    }))
+    }));
+
+    return { about, stats, skillCategories, services, projects, experiences, testimonials, blogs };
   } catch (error) {
-    console.error('Error fetching data:', error)
+    console.error('Error fetching data:', error);
+    return {
+      about: { bio: '', highlights: [], journey: [] },
+      stats: [],
+      skillCategories: [],
+      services: [],
+      projects: [],
+      experiences: [],
+      testimonials: [],
+      blogs: [],
+    };
   }
+}
+
+// Enable ISR with revalidate
+export const revalidate = 60; // Revalidate every 60 seconds
+
+export default async function Home() {
+  const { about, stats, skillCategories, services, projects, experiences, testimonials, blogs } = await fetchData();
 
   return (
     <main className="min-h-screen bg-background">
@@ -211,5 +217,5 @@ export default async function Home() {
       {/* <BlogSection blogs={blogs} /> */}
       <ContactSection />
     </main>
-  )
+  );
 }
