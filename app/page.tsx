@@ -207,11 +207,11 @@ export default async function Home() {
       <AboutSection about={about} />
       <StatsSection stats={stats} />
       <SkillsSection skillCategories={skillCategories} />
-      <ServicesSection services={services} />
+      {/* <ServicesSection services={services} /> */}
       <ProjectsSection projects={projects} />
-      {/* <PublicationsSection />
-      <EducationSection />
-      <CertificationsSection /> */}
+      <PublicationsSection />
+      {/* <EducationSection /> */}
+      {/* <CertificationsSection /> */}
       <ExperienceSection experiences={experiences} />
       {/* <TestimonialsSection testimonials={testimonials} /> */}
       {/* <BlogSection blogs={blogs} /> */}
