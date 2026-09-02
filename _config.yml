@@ -217,7 +217,7 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages"]
+include: ["_pages", ".nojekyll"] # .nojekyll tells GitHub Pages to serve the gh-pages branch as-is
 exclude:
   - AGENTS.md
   - al-folio-upgrade-report.md
