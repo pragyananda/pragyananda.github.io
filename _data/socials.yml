@@ -1,0 +1,11 @@
+# social links shown at the bottom of the about page, in this order
+# keys follow the jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+cv_pdf: /assets/pdf/cv.pdf # path to your CV PDF file
+email: pragyanandasaho@gmail.com
+github_username: pragyananda
+linkedin_username: pragyanandsaho
+# scholar_userid: # add your Google Scholar ID here to show the Scholar icon
+custom_social:
+  logo: https://dev.to/favicon.ico
+  title: dev.to
+  url: https://dev.to/pragyanandasaho

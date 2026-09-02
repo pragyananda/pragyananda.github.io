@@ -1,0 +1,5 @@
+# map co-author last names to links, e.g.
+# "smith":
+#   - firstname: ["Jane", "J."]
+#     url: https://example.com
+{}

@@ -1,0 +1,157 @@
+cv:
+  name: Pragyanand Sahoo
+  label: Research Associate (AI/ML) · Full Stack Developer
+  email: pragyanandasaho@gmail.com
+  phone: "+91 6398665353"
+  website: https://pragyananda.github.io
+  location: Haridwar, Uttarakhand, India
+  image: ""
+  summary: Full stack developer turned AI/ML researcher. I work on generative AI, retrieval-augmented generation, large language models, and computer vision at CAIR Lab, DSVV, and I build production web apps with Next.js and Django.
+
+  social_networks:
+    - network: GitHub
+      username: pragyananda
+    - network: LinkedIn
+      username: pragyanandsaho
+
+  sections:
+    Education:
+      - institution: Dev Sanskriti Vishwavidyalaya
+        location: Haridwar, India
+        url: https://dsvv.ac.in/
+        area: Computer Applications, Data Science specialization · CGPA 8.20/10
+        studyType: Master of Computer Applications (MCA)
+        start_date: 2022-09
+        end_date: 2024-07
+        score: "CGPA 8.20/10"
+
+      - institution: Dev Sanskriti Vishwavidyalaya
+        location: Haridwar, India
+        url: https://dsvv.ac.in/
+        area: Computer Applications, Computer Science · CGPA 7.42/10
+        studyType: Bachelor of Computer Applications (BCA)
+        start_date: 2019-08
+        end_date: 2022-07
+        score: "CGPA 7.42/10"
+
+    Experience:
+      - company: CAIR Lab, Institute of AI, Dev Sanskriti Vishwavidyalaya
+        position: Research Associate (AI/ML)
+        location: Haridwar, India
+        start_date: 2024-05
+        end_date: present
+        summary: Applied research on generative AI for images, video, and text.
+        highlights:
+          - Researched generative AI with a focus on retrieval-augmented generation (RAG), transformers, and machine learning models.
+          - Developed an AI model for the Supreme Court that identifies similarities between new and historical legal cases using RAG and large language models.
+          - Contributed to Innopat, an AI tool that drafts complete patent submissions from claims and Invention Disclosure Forms using RAG, LangChain, and LLMs.
+          - Trained and deployed AI models for real-world applications and mentored junior developers.
+
+      - company: CAIR Lab, Institute of AI, Dev Sanskriti Vishwavidyalaya
+        position: Research Intern (Computer Vision)
+        location: Haridwar, India
+        start_date: 2024-02
+        end_date: 2024-05
+        highlights:
+          - Researched handwritten document transformation using document AI transformers and open-source OCR models such as docTR.
+          - Built a handwritten-text OCR application with the MERN stack and Flask.
+          - Built a face-recognition attendance system with Tkinter and Haar cascades.
+          - Integrated OpenAI APIs and worked with LangChain and Azure services.
+
+      - company: Travel Vaidya
+        position: Web Development Intern
+        location: Haridwar, India
+        start_date: 2023-06
+        end_date: 2023-07
+        highlights:
+          - Migrated the company website from WordPress to a scalable Django platform with payment integration (uttarakhandtrips.com).
+          - Improved performance, usability, and reliability through backend enhancements.
+
+      - company: Dev Sanskriti Vishwavidyalaya
+        position: Web Development Summer Intern
+        location: Haridwar, India
+        start_date: 2022-04
+        end_date: 2022-05
+        highlights:
+          - Built internal web applications supporting university operations with PHP and MySQL, including e-commerce features.
+
+    Publications:
+      - title: "AI-Monitors at GenAI Detection Task 1: Fast and Scalable Machine Generated Text Detection"
+        authors:
+          - Azad Singh
+          - Vishnu Tripathi
+          - Ravindra Kumar Pandey
+          - Pragyanand Saho
+          - Prakhar Joshi
+          - Neel Mani
+          - Richa Alagh
+          - Pallaw Mishra
+          - Piyush Arora
+        publisher: Proceedings of the 1st Workshop on GenAI Content Detection (GenAIDetect), COLING 2025, Abu Dhabi
+        releaseDate: 2025-01-19
+        url: https://aclanthology.org/2025.genaidetect-1.25/
+        summary: Fine-tuned RoBERTa and XLM-R models to detect machine-generated text. Careful choice of training epochs, input size, and class-imbalance handling gave a 5–6% absolute gain in accuracy and F1.
+
+      - title: Marma Point Detection and Personalized Ayurvedic Diagnosis using Computer Vision
+        authors:
+          - Pragyanand Sahoo
+        publisher: Presented at IIT Mandi
+        releaseDate: 2025-06-15
+        summary: Under submission for publication.
+
+    Projects:
+      - name: DVAS
+        url: https://dvas.vercel.app/
+        summary: E-commerce store for eco-friendly areca palm leaf cutlery. Next.js 15, Tailwind CSS, Node.js, MongoDB.
+
+      - name: UttarakhandTrips
+        url: https://uttarakhandtrips.com/
+        summary: Travel booking site migrated from WordPress to Django with payments, MySQL, and a REST API.
+
+      - name: Sign Language Recognition System
+        summary: Computer-vision model that recognises sign language gestures. Academic project, DSVV, 2024.
+
+      - name: Food Center
+        summary: E-commerce system. Academic project, DSVV, 2022.
+
+    Skills:
+      - name: Programming languages
+        icon: fa-solid fa-code
+        keywords: "C++, Java, JavaScript (ES6+), Python, SQL"
+
+      - name: AI and data science
+        icon: fa-solid fa-brain
+        keywords: "Computer vision, NLP, deep learning, generative modelling, RAG, LLMs, meta learning, TensorFlow, PyTorch, OpenCV, Hugging Face Transformers, LangChain, NumPy, Pandas"
+
+      - name: Web development
+        icon: fa-solid fa-globe
+        keywords: "Next.js, React, MERN stack, TypeScript, Tailwind CSS, Bootstrap, Django, Flask, FastAPI, Node.js, Express, Redis"
+
+      - name: Databases, cloud, and tools
+        icon: fa-solid fa-database
+        keywords: "MySQL, PostgreSQL, MongoDB, SQLite, Supabase, Firebase, AWS, Azure, Docker, Vercel, Nginx, Linux, Git, GitHub Actions, Jira"
+
+    Certificates:
+      - name: AWS Builders Online Series
+        issuer: Amazon Web Services
+
+      - name: Deploy a Django Web App with AWS Elastic Beanstalk
+        date: 2023
+
+      - name: Data Analytics with Specialization in Tableau
+
+      - name: Intro to Programming
+        issuer: Kaggle
+
+    Interests:
+      - name: Hackathons and ideathons
+        icon: fa-solid fa-lightbulb
+        keywords: "ICFAI University Ideathon, Dehradun: pitched an idea and presented its impact and feasibility to the judges"
+
+      - name: Community
+        icon: fa-solid fa-people-group
+        keywords: "Social internship focused on community development"
+
+      - name: Art and sport
+        icon: fa-solid fa-palette
+        keywords: "National Art Competition participant, badminton player"
