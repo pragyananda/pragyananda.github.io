@@ -2,7 +2,7 @@
 layout: page
 title: Handwritten text OCR
 description: Document AI transformers and docTR for handwritten document transformation
-importance: 5
+importance: 7
 category: research
 ---
 

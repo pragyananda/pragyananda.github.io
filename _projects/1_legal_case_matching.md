@@ -2,7 +2,7 @@
 layout: page
 title: Legal case matching
 description: RAG + LLM system that matches new Supreme Court cases against historical ones
-importance: 1
+importance: 3
 category: research
 ---
 

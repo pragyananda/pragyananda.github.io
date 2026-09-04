@@ -3,7 +3,7 @@ layout: page
 title: UttarakhandTrips
 description: Travel booking site migrated from WordPress to Django
 img: assets/img/uttarakhandtrips.webp
-importance: 4
+importance: 6
 category: work
 ---
 

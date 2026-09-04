@@ -2,16 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: Research Associate (AI/ML), <a href="https://dsvv.ac.in/">CAIR Lab, DSVV</a> · Full stack developer · Haridwar, India
+subtitle: Junior Research Fellow (AI/ML), <a href="https://srhu.edu.in/">Swami Rama Himalayan University</a> · Haridwar, India
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>CAIR Lab, Institute of AI</p>
-    <p>Dev Sanskriti Vishwavidyalaya</p>
-    <p>Haridwar, Uttarakhand, India</p>
+    <p>Swami Rama Himalayan University</p>
+    <p>Doiwala, Uttarakhand, India</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,12 +26,12 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi, I'm Pragyanand. 👋
+Hi, I'm Pragyananda. 👋
 
-I'm a **Research Associate** at CAIR Lab, Institute of AI, [Dev Sanskriti Vishwavidyalaya](https://dsvv.ac.in/) in Haridwar, where I work on **generative AI** for images, video, and text: retrieval-augmented generation (RAG), transformers, and computer vision. Two things I've built recently are an LLM system for the **Supreme Court** that matches new legal cases against historical ones, and **Innopat**, a tool that drafts complete patent submissions from claims and invention disclosure forms.
+I'm a **Junior Research Fellow** at [Swami Rama Himalayan University](https://srhu.edu.in/), where I work on NLP and document AI. Before that I spent two years as an **AI Engineer** at CAIR Lab, Institute of AI, [Dev Sanskriti Vishwavidyalaya](https://dsvv.ac.in/), building LLM and retrieval-augmented generation (RAG) systems for document-heavy domains: **HistoAI**, an OCR, knowledge-graph, and RAG ecosystem for historical books that I continue to develop at SRHU; **Innopat**, an AI patent-drafting assistant; a **legal case matching** system for the Supreme Court of India; and **AURA**, a tax-automation system for ride-share drivers in Australia.
 
-Before research I was a **full stack developer**. I migrated [Travel Vaidya](https://uttarakhandtrips.com/)'s WordPress site to Django, shipped [DVAS](https://dvas.vercel.app/), a Next.js store for eco-friendly palm leaf cutlery, and built OCR and face-recognition systems as a research intern. My toolbox: Python, JavaScript, Next.js, Django, Flask, PyTorch, TensorFlow, LangChain, MongoDB, PostgreSQL, AWS, Azure, and Docker.
+My research so far covers machine-generated text detection ([COLING 2025](https://aclanthology.org/2025.genaidetect-1.25/)), narrative similarity (SemEval-2026 Task 4, where our AI-Monitors system ranked 3rd of 47), and computer vision for personalised Ayurvedic diagnosis (first-author paper, MBCC 2025, Springer Nature). My current work on child-safe advertising is under review at the NLLP workshop.
 
-I hold an **MCA in Data Science** and a **BCA in Computer Science** from DSVV. My first paper, on detecting machine-generated text, appeared at the GenAIDetect workshop at [COLING 2025](https://aclanthology.org/2025.genaidetect-1.25/).
+I hold an **MCA in Data Science** and a **BCA in Computer Science** from DSVV, and I have a full stack background (Next.js, Django, Flask) with deployments on AWS, Azure, and Vercel.
 
-I'm open to research collaborations and freelance projects in AI/ML and web development. The best way to reach me is [email](mailto:pragyanandasaho@gmail.com).
+I'm open to research collaborations and PhD opportunities in NLP and applied machine learning. The best way to reach me is [email](mailto:pragyanandasaho@gmail.com).

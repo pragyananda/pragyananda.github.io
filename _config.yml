@@ -3,17 +3,17 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Pragyanand
+first_name: Pragyananda
 middle_name:
 last_name: Sahoo
 contact_note: >
   Email is the best way to reach me.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Pragyanand Sahoo, AI/ML research associate at CAIR Lab, DSVV Haridwar, and full stack developer. Generative AI, RAG, LLMs, computer vision.
+  Pragyananda Sahoo, Junior Research Fellow (AI/ML) at Swami Rama Himalayan University and former AI Engineer at CAIR Lab, DSVV. Generative AI, RAG, LLMs, document AI, computer vision.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: pragyanand sahoo, ai, machine learning, generative ai, rag, llm, computer vision, full stack developer, haridwar, dsvv, cair lab
+keywords: pragyananda sahoo, pragyanand sahoo, ai, machine learning, generative ai, rag, llm, nlp, computer vision, srhu, dsvv, cair lab, haridwar
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🧠 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
@@ -346,7 +346,7 @@ display_categories: ["external-services"] # these categories will be displayed o
 
 scholar:
   last_name: [Sahoo, Saho]
-  first_name: [Pragyanand, P.]
+  first_name: [Pragyananda, Pragyanand, P.]
 
   style: apa
   locale: en

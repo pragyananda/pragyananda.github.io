@@ -1,12 +1,12 @@
 cv:
-  name: Pragyanand Sahoo
-  label: Research Associate (AI/ML) · Full Stack Developer
+  name: Pragyananda Sahoo
+  label: Junior Research Fellow (AI/ML) · NLP and Document AI
   email: pragyanandasaho@gmail.com
   phone: "+91 6398665353"
   website: https://pragyananda.github.io
   location: Haridwar, Uttarakhand, India
   image: ""
-  summary: Full stack developer turned AI/ML researcher. I work on generative AI, retrieval-augmented generation, large language models, and computer vision at CAIR Lab, DSVV, and I build production web apps with Next.js and Django.
+  summary: Junior Research Fellow at Swami Rama Himalayan University and former AI Engineer at CAIR Lab, DSVV. I build LLM, RAG, and computer-vision systems for document-heavy domains (legal, patents, historical books) and publish on machine-generated text detection, narrative similarity, and vision-based Ayurvedic diagnosis.
 
   social_networks:
     - network: GitHub
@@ -35,40 +35,47 @@ cv:
         score: "CGPA 7.42/10"
 
     Experience:
-      - company: CAIR Lab, Institute of AI, Dev Sanskriti Vishwavidyalaya
-        position: Research Associate (AI/ML)
-        location: Haridwar, India
-        start_date: 2024-05
+      - company: Swami Rama Himalayan University
+        position: Junior Research Fellow (AI/ML)
+        location: Doiwala, Uttarakhand, India
+        url: https://srhu.edu.in/
+        start_date: 2026-03
         end_date: present
-        summary: Applied research on generative AI for images, video, and text.
         highlights:
-          - Researched generative AI with a focus on retrieval-augmented generation (RAG), transformers, and machine learning models.
-          - Developed an AI model for the Supreme Court that identifies similarities between new and historical legal cases using RAG and large language models.
-          - Contributed to Innopat, an AI tool that drafts complete patent submissions from claims and Invention Disclosure Forms using RAG, LangChain, and LLMs.
-          - Trained and deployed AI models for real-world applications and mentored junior developers.
+          - Continuing development of HistoAI, the historical-books ecosystem started at CAIR Lab, DSVV (OCR with image extraction, structured data extraction, knowledge-graph generation, and a RAG chatbot over the digitised collection).
+          - Conducted an NLP study on child-safe advertisements; paper submitted to the Natural Legal Language Processing (NLLP) Workshop (under review).
+          - Built web application prototypes and contributed to other research projects at the university.
 
       - company: CAIR Lab, Institute of AI, Dev Sanskriti Vishwavidyalaya
-        position: Research Intern (Computer Vision)
+        position: AI Engineer
+        location: Haridwar, India
+        start_date: 2024-05
+        end_date: 2026-03
+        highlights:
+          - Built LLM and RAG products for legal, patent, and historical-document workflows - Supreme Court legal case matching, Innopat patent drafting, and HistoAI.
+          - Member of the AI-Monitors team for the COLING 2025 GenAI Content Detection task and SemEval-2026 Task 4 (narrative similarity).
+          - Applied research on generative AI for images, video, and text, transformer architectures, and LLM fine-tuning; trained and deployed models for real-world use and mentored junior developers.
+
+      - company: CAIR Lab, Institute of AI, Dev Sanskriti Vishwavidyalaya
+        position: Project Intern (Computer Vision)
         location: Haridwar, India
         start_date: 2024-02
         end_date: 2024-05
         highlights:
-          - Researched handwritten document transformation using document AI transformers and open-source OCR models such as docTR.
-          - Built a handwritten-text OCR application with the MERN stack and Flask.
-          - Built a face-recognition attendance system with Tkinter and Haar cascades.
+          - Researched handwritten document transformation using document AI transformers and open-source OCR models such as docTR; built a handwritten-text OCR web app with the MERN stack and Flask.
+          - Built a face-recognition attendance system with Tkinter, OpenCV, and Haar cascades.
           - Integrated OpenAI APIs and worked with LangChain and Azure services.
 
       - company: Travel Vaidya
-        position: Web Development Intern
+        position: Internship Trainee (Web Development)
         location: Haridwar, India
         start_date: 2023-06
         end_date: 2023-07
         highlights:
-          - Migrated the company website from WordPress to a scalable Django platform with payment integration (uttarakhandtrips.com).
-          - Improved performance, usability, and reliability through backend enhancements.
+          - Migrated uttarakhandtrips.com from WordPress to a scalable Django platform with payment integration, MySQL, and a REST API.
 
       - company: Dev Sanskriti Vishwavidyalaya
-        position: Web Development Summer Intern
+        position: Summer Intern (Web Development)
         location: Haridwar, India
         start_date: 2022-04
         end_date: 2022-05
@@ -76,6 +83,29 @@ cv:
           - Built internal web applications supporting university operations with PHP and MySQL, including e-commerce features.
 
     Publications:
+      - title: "AI-Monitors at SemEval-2026 Task 4: A Hybrid Embedding and LLM Ensemble for Narrative Similarity"
+        authors:
+          - Vishnu Tripathi
+          - Prakhar Joshi
+          - Pragyananda Sahoo
+          - Gaurav Kumar
+          - Piyush Arora
+          - Neel Mani
+          - and others
+        publisher: Proceedings of the 20th International Workshop on Semantic Evaluation (SemEval-2026), ACL, pp. 2139-2148
+        releaseDate: 2026-07-07
+        summary: Determines which of two candidate stories is more narratively similar to an anchor. Structured few-shot prompting and an error-diversity ensemble reached 75% test accuracy, ranking 3rd of 47 systems, close to the 78% human annotator ceiling.
+
+      - title: Marma Point Detection and Personalized Ayurvedic Diagnosis Using Computer Vision
+        authors:
+          - Pragyanand Sahoo
+          - Neel Mani
+          - Shastri Nimmagadda
+          - Amit Das
+        publisher: "Indian Knowledge System and Wellbeing: Proceedings of MBCC 2025, Volume 1, Springer Nature, p. 228"
+        releaseDate: 2026-06-01
+        summary: First-author paper. A methodology that analyses user images with body type (Vata, Pitta, Kapha), height, symptoms, and medical history to recommend personalised marma points for stress and anxiety therapy. Presented at the 2nd MBCC 2025 conference, IIT Mandi.
+
       - title: "AI-Monitors at GenAI Detection Task 1: Fast and Scalable Machine Generated Text Detection"
         authors:
           - Azad Singh
@@ -87,49 +117,68 @@ cv:
           - Richa Alagh
           - Pallaw Mishra
           - Piyush Arora
-        publisher: Proceedings of the 1st Workshop on GenAI Content Detection (GenAIDetect), COLING 2025, Abu Dhabi
+        publisher: Proceedings of the 1st Workshop on GenAI Content Detection (GenAIDetect), COLING 2025, Abu Dhabi, pp. 230-235
         releaseDate: 2025-01-19
         url: https://aclanthology.org/2025.genaidetect-1.25/
-        summary: Fine-tuned RoBERTa and XLM-R models to detect machine-generated text. Careful choice of training epochs, input size, and class-imbalance handling gave a 5–6% absolute gain in accuracy and F1.
-
-      - title: Marma Point Detection and Personalized Ayurvedic Diagnosis using Computer Vision
-        authors:
-          - Pragyanand Sahoo
-        publisher: Presented at IIT Mandi
-        releaseDate: 2025-06-15
-        summary: Under submission for publication.
+        summary: Fine-tuned RoBERTa and XLM-R models to detect machine-generated text. Careful choice of training epochs, input size, and class-imbalance handling gave a 5-6% absolute gain in accuracy and F1.
 
     Projects:
+      - name: HistoAI - Ecosystem for Historical Books
+        summary: End-to-end pipeline for digitising historical books, developed at CAIR Lab, DSVV and continued at SRHU - OCR with image extraction for degraded scans, structured data extraction, knowledge-graph generation, and a RAG chatbot over the collection.
+
+      - name: Innopat - AI Patent Drafting Assistant
+        summary: Turns claim lists and Invention Disclosure Forms into full patent specifications with RAG and LLMs; refined prompts for consistent terminology, PDF/DOCX parsing, and figure mappings.
+
+      - name: Supreme Court Legal Case Matching System
+        summary: Vector-based RAG with LLMs that identifies commonalities, semantic similarities, and legal precedents between newly filed and historical cases.
+
+      - name: AURA - Tax Automation for Ride-share Drivers (Australia)
+        summary: Accounting automation for UBER and DIDI drivers - extraction of ride-sharing activity statements, pipelines for CBA, NAB, and ANZ bank data, a BAS automation engine, transaction reconciliation, and Excel-integrated reporting.
+
       - name: DVAS
         url: https://dvas.vercel.app/
-        summary: E-commerce store for eco-friendly areca palm leaf cutlery. Next.js 15, Tailwind CSS, Node.js, MongoDB.
+        summary: Freelance e-commerce store for eco-friendly areca palm leaf cutlery. Next.js 15, Tailwind CSS, Node.js, MongoDB.
 
       - name: UttarakhandTrips
         url: https://uttarakhandtrips.com/
         summary: Travel booking site migrated from WordPress to Django with payments, MySQL, and a REST API.
 
-      - name: Sign Language Recognition System
-        summary: Computer-vision model that recognises sign language gestures. Academic project, DSVV, 2024.
-
-      - name: Food Center
-        summary: E-commerce system. Academic project, DSVV, 2022.
-
     Skills:
-      - name: Programming languages
-        icon: fa-solid fa-code
-        keywords: "C++, Java, JavaScript (ES6+), Python, SQL"
-
-      - name: AI and data science
+      - name: GenAI and LLMs
         icon: fa-solid fa-brain
-        keywords: "Computer vision, NLP, deep learning, generative modelling, RAG, LLMs, meta learning, TensorFlow, PyTorch, OpenCV, Hugging Face Transformers, LangChain, NumPy, Pandas"
+        keywords: "RAG, LLM fine-tuning, prompt engineering, vector search, LangChain, Hugging Face Transformers, OpenAI API"
 
-      - name: Web development
+      - name: Methods
+        icon: fa-solid fa-flask
+        keywords: "NLP, computer vision, OCR, deep learning, generative modelling, meta learning, machine-generated text detection"
+
+      - name: Libraries
+        icon: fa-solid fa-code
+        keywords: "PyTorch, TensorFlow, OpenCV, docTR, NumPy, Pandas"
+
+      - name: Web
         icon: fa-solid fa-globe
-        keywords: "Next.js, React, MERN stack, TypeScript, Tailwind CSS, Bootstrap, Django, Flask, FastAPI, Node.js, Express, Redis"
+        keywords: "Next.js, React, Node.js, Express, Django, Flask, FastAPI, Tailwind CSS, Bootstrap"
 
-      - name: Databases, cloud, and tools
+      - name: Data, cloud, and tools
         icon: fa-solid fa-database
-        keywords: "MySQL, PostgreSQL, MongoDB, SQLite, Supabase, Firebase, AWS, Azure, Docker, Vercel, Nginx, Linux, Git, GitHub Actions, Jira"
+        keywords: "MySQL, PostgreSQL, MongoDB, SQLite, Supabase, Firebase, Redis, AWS, Azure, Docker, Vercel, Nginx, Git, GitHub Actions, Linux, Jira; Python, JavaScript, TypeScript, Java, C++, SQL"
+
+    Achievements:
+      - name: SemEval-2026 Task 4 (ACL)
+        summary: AI-Monitors system ranked 3rd of 47 submissions on narrative similarity.
+
+      - name: 2nd MBCC 2025 Conference, IIT Mandi
+        summary: Presented the Marma Point Detection paper, later published by Springer Nature.
+
+      - name: COLING 2025 Competition on Binary Text Classification
+        summary: Competed with the AI-Monitors team in the GenAI Content Detection shared task; results published at the GenAIDetect workshop.
+
+      - name: ICFAI University Ideathon, Dehradun
+        summary: Pitched an idea and presented its impact and feasibility to the judges.
+
+      - name: Tula's 24-Hour Hackathon
+        summary: Participated in the 24-hour hackathon at Tula's Institute, Dehradun.
 
     Certificates:
       - name: AWS Builders Online Series
@@ -144,10 +193,6 @@ cv:
         issuer: Kaggle
 
     Interests:
-      - name: Hackathons and ideathons
-        icon: fa-solid fa-lightbulb
-        keywords: "ICFAI University Ideathon, Dehradun: pitched an idea and presented its impact and feasibility to the judges"
-
       - name: Community
         icon: fa-solid fa-people-group
         keywords: "Social internship focused on community development"

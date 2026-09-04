@@ -2,7 +2,7 @@
 layout: page
 title: Face-recognition attendance
 description: Desktop attendance system that replaces manual registers
-importance: 6
+importance: 8
 category: academic
 ---
 

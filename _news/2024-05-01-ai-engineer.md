@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined CAIR Lab, DSVV as a Research Associate working on generative AI, RAG, and LLMs.
+Joined CAIR Lab, DSVV as an AI Engineer working on generative AI, RAG, and LLMs.

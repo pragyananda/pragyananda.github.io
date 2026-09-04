@@ -1,6 +1,6 @@
 # pragyananda.github.io
 
-Personal academic website of Pragyanand Sahoo, built with the [al-folio](https://github.com/alshedivat/al-folio) Jekyll theme and hosted on GitHub Pages.
+Personal academic website of Pragyananda Sahoo, built with the [al-folio](https://github.com/alshedivat/al-folio) Jekyll theme and hosted on GitHub Pages.
 
 ## Editing content
 
